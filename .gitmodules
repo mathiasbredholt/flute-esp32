@@ -1,0 +1,3 @@
+[submodule "libmapper_idf"]
+	path = libmapper_idf
+	url = https://github.com/mathiasbredholt/libmapper_idf.git
