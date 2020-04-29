@@ -1,6 +1,6 @@
 idf_component_register(SRCS "main.cpp" "${CMAKE_CURRENT_BINARY_DIR}/FaustSawtooth.cpp"
                        INCLUDE_DIRS ${CMAKE_CURRENT_BINARY_DIR}
-                       REQUIRES audio_sal audio_hal esp_dispatcher esp_peripherals display_service)
+                       REQUIRES audio_sal audio_hal esp_dispatcher esp_peripherals display_service libmapper protocol_examples_common)
 
 add_custom_command(OUTPUT FaustSawtooth.h FaustSawtooth.cpp
      COMMAND faust2esp32 -lib ${COMPONENT_DIR}/FaustSawtooth.dsp && unzip -jo FaustSawtooth.zip && rm FaustSawtooth.zip

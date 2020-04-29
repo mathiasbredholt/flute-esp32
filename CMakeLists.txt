@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-
 include($ENV{ADF_PATH}/CMakeLists.txt)
+set(EXTRA_COMPONENT_DIRS ${EXTRA_COMPONENT_DIRS} $ENV{IDF_PATH}/examples/common_components/protocol_examples_common libmapper_idf/components)
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(faust_example)
